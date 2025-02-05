@@ -58,3 +58,17 @@ public class Factorial {
 ## 8 Primitive data types in java
 
 ![primitive data types in javas](./images/Primitive.png)
+
+**Print smallest and largest integer in java**
+
+```
+public class Main {
+    public static void main(String[] args) {
+        int smallestInt = Integer.MIN_VALUE;
+        int largestInt = Integer.MAX_VALUE;
+
+        System.out.println(smallestInt + " " + largestInt);
+        <!-- Output is: "-2147483648 2147483647" -->
+    }
+}
+```
