@@ -112,4 +112,5 @@ We can assign a value to char in 3 formats:
    `char myChar = '\u0044'`
 3. Decimal char assignment
    `char myChar = 68`
-   (All above variables have character **"d"** stored in them)
+
+(All above variables have character **"d"** stored in them)
