@@ -114,3 +114,12 @@ We can assign a value to char in 3 formats:
    `char myChar = 68`
 
 (All above variables have character **"d"** stored in them)
+
+# `boolean` Data type
+
+boolean data types have only 2 values stored in them **true** and **false**
+
+```
+    boolean truthyBooleanValue = true;
+    boolean falsyBooleanValue = false;
+```
