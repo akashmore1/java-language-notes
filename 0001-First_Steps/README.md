@@ -99,3 +99,17 @@ But if we know it will have value in range of byte, we can type cast the express
 In Java, the range of a float is \(1.4\times 10^{-45}\) to \(3.4\times 10^{38}\), while the range of a double is \(4.9\times 10^{-324}\) to \(1.7976931348623157\times 10^{308}\).
 
 Casting can be applied on float and double data types as well
+
+# `char` and `boolean` data types
+
+`char myChar = 'a';`
+**char** is always defined in single quotes whereas **String** is defined in double quotes
+We can assign a value to char in 3 formats:
+
+1. Simple char assignment
+   `char myChar = 'd'`
+2. Unicode char assignment: (Apply `"\"` prefix before unicode)
+   `char myChar = '\u0044'`
+3. Decimal char assignment
+   `char myChar = 68`
+   (All above variables have character **"d"** stored in them)
