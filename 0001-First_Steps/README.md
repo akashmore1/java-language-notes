@@ -78,3 +78,16 @@ public class Main {
 `long largeNum = 40000000` will be considered int type by default so using prefix `long largeNum = 40000000L` is recommended.
 
 # Type Casting in java
+
+Mostly always use int
+
+Supposedly, we have an integer
+`int num = 4;`
+
+and another byte
+`byte halfNum = num/2;`
+
+Above code will throw error as halfNum can have value which will not be in range of byte.
+But if we know it will have value in range of byte, we can type cast the expression like below
+
+`byte halfNum = (byte) (num/2);`
