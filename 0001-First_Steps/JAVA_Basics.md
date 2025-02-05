@@ -1,4 +1,4 @@
-## First Program
+# First Program
 
 ```
     public class HelloWorld {
@@ -8,13 +8,13 @@
     }
 ```
 
-## Java Keywords
+# Java Keywords
 
 Following is list of all keywords in java
 
 ![java keywords](./images/java-keywords.png)
 
-## Print first number
+# Print first number
 
 ```
 public class FirstNumber {
@@ -32,7 +32,7 @@ public class FirstNumber {
 }
 ```
 
-## Starting out with Expressions
+# Starting out with Expressions
 
 Write a program in java which gives factorial of given number
 
@@ -55,7 +55,7 @@ public class Factorial {
 }
 ```
 
-## 8 Primitive data types in java
+# 8 Primitive data types in java
 
 ![primitive data types in javas](./images/Primitive.png)
 
@@ -76,3 +76,5 @@ public class Main {
 #### byte, short, int, long are other whole number data types in increasing order of range
 
 `long largeNum = 40000000` will be considered int type by default so using prefix `long largeNum = 40000000L` is recommended.
+
+# Type Casting in java
