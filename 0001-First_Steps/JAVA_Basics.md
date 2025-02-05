@@ -12,7 +12,7 @@
 
 Following is list of all keywords in java
 
-![java keywords](./java-keywords.png)
+![java keywords](./images/java-keywords.png)
 
 ## Print first number
 
@@ -57,4 +57,4 @@ public class Factorial {
 
 ## 8 Primitive data types in java
 
-![primitive data types in javas](./Primitive.png)
+![primitive data types in javas](./images/Primitive.png)
