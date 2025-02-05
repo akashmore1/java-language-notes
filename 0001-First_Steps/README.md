@@ -91,3 +91,11 @@ Above code will throw error as halfNum can have value which will not be in range
 But if we know it will have value in range of byte, we can type cast the expression like below
 
 `byte halfNum = (byte) (num/2);`
+
+# `float` and `double` data types in java
+
+`double` is java's default type for any decimal or real number
+
+In Java, the range of a float is \(1.4\times 10^{-45}\) to \(3.4\times 10^{38}\), while the range of a double is \(4.9\times 10^{-324}\) to \(1.7976931348623157\times 10^{308}\).
+
+Casting can be applied on float and double data types as well
