@@ -123,3 +123,26 @@ boolean data types have only 2 values stored in them **true** and **false**
     boolean truthyBooleanValue = true;
     boolean falsyBooleanValue = false;
 ```
+
+### Note:
+
+1. We will almost never have to use byte datatype
+2. Mostly we only use **int**, **double** and **boolean** datatype
+3. Sometimes in rare cases, we use **long** and **char** datatype
+
+# String data type
+
+1. String is not primitive data type in java, it's actually a class, that's why S is capital
+2. Two strings can be concated with **+** sign
+3. Strings are not mutable, every time a new string is created when change in existing string
+4. String data type immutable, to overcome this we have inbuilt class in Java: **StringBuilder** which is mutable.
+5. We will see about String and StringBuilder in future in detail
+6. We can treat String data type as 9th primitive type, although it is not primitive data type but a class
+7. Java language makes it easy to assign value to String class and concat using "+". This is not frequent behavior for other classes in java.
+
+```
+String firstString = "Hello";
+String secondString = "World";
+
+String finalString = firstString + " " + secondString;
+```
