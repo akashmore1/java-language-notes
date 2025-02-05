@@ -72,3 +72,7 @@ public class Main {
     }
 }
 ```
+
+#### byte, short, int, long are other whole number data types in increasing order of range
+
+`long largeNum = 40000000` will be considered int type by default so using prefix `long largeNum = 40000000L` is recommended.
