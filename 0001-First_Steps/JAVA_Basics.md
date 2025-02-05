@@ -54,3 +54,7 @@ public class Factorial {
     }
 }
 ```
+
+## 8 Primitive data types in java
+
+![primitive data types in javas](./Primitive.png)
