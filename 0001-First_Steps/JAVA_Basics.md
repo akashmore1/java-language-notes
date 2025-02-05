@@ -13,3 +13,21 @@
 Following is list of all keywords in java
 
 ![java keywords](./java-keywords.png)
+
+## Print first number
+
+```
+public class FirstNumber {
+
+<!-- We will why below function needs to be static in future -->
+    private static int getNumber(int num) {
+        return num;
+    }
+
+    public static void main(String[] args) {
+        int num = getNumber(4);
+        num = num + num;
+        System.out.println(num);
+    }
+}
+```
