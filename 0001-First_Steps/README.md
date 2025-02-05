@@ -139,6 +139,8 @@ boolean data types have only 2 values stored in them **true** and **false**
 5. We will see about String and StringBuilder in future in detail
 6. We can treat String data type as 9th primitive type, although it is not primitive data type but a class
 7. Java language makes it easy to assign value to String class and concat using "+". This is not frequent behavior for other classes in java.
+8. `char` and `String` don't treat **`+`** sign the same, as `char` cannot be concatenated.
+9. char in single quotes, whereas String in double quotes
 
 ```
 String firstString = "Hello";
@@ -146,3 +148,20 @@ String secondString = "World";
 
 String finalString = firstString + " " + secondString;
 ```
+
+# Operators
+
+1. `+, -, *, /, %` are operators in java.
+2. **`%` ** used to get reminder
+
+## Abbreviating operators
+
+1. We can write `result = result + 1;` in following ways
+
+```
+    result++;
+    <!-- or -->
+    result += 1;
+```
+
+2. Above things applies same to **`-, * and /`**
