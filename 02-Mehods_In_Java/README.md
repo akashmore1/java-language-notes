@@ -24,7 +24,7 @@
 
 ### In following example, method overloading is applied on doSomething() method
 
-![alt text](./images/Valid.png)
+    ![alt text](./images/Valid.png)
 
 ### Following are examples of invalid overloaded methods
 
