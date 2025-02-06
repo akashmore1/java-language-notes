@@ -15,3 +15,9 @@
 2. But Java doesn't support default values for parameters.
 3. There are work-arounds for this limitation, and we'll be reviewing those at a later date.
 4. But it's important to state again, in Java, the number of arguments you pass, and their type, must match the parameters in the method declaration exactly.
+
+# Method overloading
+
+1. Method overloading occurs when a class has multiple methods with the same name, but the methods are declared with different parameters.
+2. So, you can execute multiple methods with the same name, but call it with different arguments.
+3. Java can resolve which method it needs to execute based on the arguments being passed when the method is invoked.
