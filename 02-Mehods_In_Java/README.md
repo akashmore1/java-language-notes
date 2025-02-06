@@ -21,3 +21,7 @@
 1. Method overloading occurs when a class has multiple methods with the same name, but the methods are declared with different parameters.
 2. So, you can execute multiple methods with the same name, but call it with different arguments.
 3. Java can resolve which method it needs to execute based on the arguments being passed when the method is invoked.
+
+### In following example, method overloading is applied on doSomething() method
+
+![alt text](./images/image.png)
