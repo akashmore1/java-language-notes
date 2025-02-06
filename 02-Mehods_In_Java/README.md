@@ -24,4 +24,10 @@
 
 ### In following example, method overloading is applied on doSomething() method
 
-![alt text](./images/image.png)
+![alt text](./images/Valid.png)
+
+### Following are examples of invalid overloaded methods
+
+1. Parameter names are not important when determining if a method is overloaded.
+2. Nor are return types used when determining if a method is unique.
+   ![alt text](./images/Invalid.png)
