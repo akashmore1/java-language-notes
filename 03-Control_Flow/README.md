@@ -108,3 +108,22 @@ public class PrimeNumber {
     }
 }
 ```
+
+# User Inputs in Java (Scanner)
+
+1. To take user input we use scanner class
+
+```
+public class UserAge {
+    public static int getUserAge() {
+        System.out.println("Enter your birth year:");
+
+        Scanner scanner = new Scanner(System.in);
+        String birthYear = scanner.nextLine();
+
+        int birthYear = Integer.parseInt(age);
+
+        return 2025 - birthYear;
+    }
+}
+```
