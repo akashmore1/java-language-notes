@@ -65,3 +65,20 @@ public class LearnSwitch {
 }
 
 ```
+
+```
+public class LearnSwitch {
+    public static int daysInMonthEnhancedYield (String month) {
+        return switch(month) {
+            case "February" -> 28;
+            case "January", "March", "May", "July", "August", "October", "December" ->  31;
+            case "April", "June", "September", "November" -> 30;
+            default -> -1;
+        };
+    }
+
+    public static void main(String[] args) {
+        System.out.println(daysInMonthEnhancedYield("March"));
+    }
+}
+```
