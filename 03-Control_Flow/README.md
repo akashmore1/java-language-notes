@@ -73,7 +73,9 @@ public class LearnSwitch {
             case "February" -> 28;
             case "January", "March", "May", "July", "August", "October", "December" ->  31;
             case "April", "June", "September", "November" -> 30;
-            default -> -1;
+            default -> {
+                yield -1;
+            }
         };
     }
 
