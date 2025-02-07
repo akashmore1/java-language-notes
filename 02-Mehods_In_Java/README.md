@@ -5,7 +5,9 @@
 # Methods in Java:
 
 1. Methods need to be defined inside a class
-2. We can't have named method inside another method. (Unlike javascript)
+2. When we pass parameters to a method, java internally creates a variable of that parameter in function
+3. So we can't create another variable of same name as parameter in java
+4. We can't have named method inside another method. (Unlike javascript)
 
 (In JS, we can define function inside another function)
 
