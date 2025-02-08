@@ -38,3 +38,19 @@ Object-Oriented Programming is a way to model real-world objects as software obj
 | protected      | protected allows classes in the same package, and any subclasses in other packages, to have access to the member.                                   |
 |                | When the modifier is omitted, this has special meaning, called package access, meaning the member is accessible only to classes in the same package |
 | private        | private means that no other class can access this member                                                                                            |
+
+# Default values of data types
+
+### What is null?
+
+1. null is a special keyword in Java, meaning, the variable or attribute has a type but no reference to an object.
+2. This means that no instance or object is assigned to the variable or field.
+3. Fields with primitive data types are never null.
+4. String can be null
+
+Fields on classes are assigned default values automatically by Java, if you don't assign values yourself.
+| Data type assigned | Default value assigned |
+|--------------------|------------------------|
+| boolean | false|
+| byte, short, int, long, char | 0 |
+| double, float | 0.0 |
