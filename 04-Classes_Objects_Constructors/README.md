@@ -54,3 +54,31 @@ Fields on classes are assigned default values automatically by Java, if you don'
 | boolean | false|
 | byte, short, int, long, char | 0 |
 | double, float | 0.0 |
+
+# Constructor
+
+1. A constructor is used in the creation of an object.
+2. It is a special type of code block that has a specific name and parameters, much like a method.
+3. It has the same name as the class itself, and it doesn't return any values.
+4. You never include a return type from a constructor, not even void.
+5. You can, and should, specify an appropriate access modifier to control who should be able to create new instances of the class, using this constructor.
+
+```
+public class Account {  // This is class declaration
+    public Account() {  // This is constructor declaration
+        // constructor code is code to be executed as the object is created
+    }
+}
+```
+
+### The default constructor
+
+1. If a class contains no constructor declarations, then a default constructor is implicitly declared.
+2. This constructor has no parameters and is often called the no-args (no arguments) constructor.
+3. If a class contains any other constructor declarations, then a default constructor is NOT implicitly declared.
+
+### Constructor overloading
+
+1. Constructor overloading is declaring multiple constructors with different parameters.
+2. The number of parameters can be different between constructors.
+3. Or if the number of parameters is the same between two constructors, their types, or order of the types must differ.
