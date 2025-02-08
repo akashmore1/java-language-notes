@@ -127,3 +127,8 @@ public class UserAge {
     }
 }
 ```
+
+# Scope of variables:
+
+1. Unlike javascript, all variables declared in java are block scoped.
+2. In case of switch-case statement, if a variable is declared in case 1, it can be accessed in other case statements provided it is declared before assigned a value
