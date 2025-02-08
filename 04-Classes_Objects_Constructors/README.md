@@ -82,3 +82,26 @@ public class Account {  // This is class declaration
 1. Constructor overloading is declaring multiple constructors with different parameters.
 2. The number of parameters can be different between constructors.
 3. Or if the number of parameters is the same between two constructors, their types, or order of the types must differ.
+
+### Constructor chaining
+
+1. Constructor chaining is when one constructor explicitly calls another overloaded constructor.
+2. You can only use constructor chaining, within constructors.
+3. You must use the special statement this() to execute another constructor, passing it arguments if required.
+4. And this() must be the first executable statement if it's used from another constructor.
+
+```
+public class Person {
+    private String name;
+    private int age;
+
+    public Person() { // Empty constructor
+        this("default_name", 21);
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+```
