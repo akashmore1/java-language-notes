@@ -109,3 +109,7 @@ public class Person {
 (Check Customer class in code folder to see constructor overloading and constructor chaining)
 
 # Reference vs Object vs Instance vs Class
+
+1. Objects are reference type (Call by reference)
+2. Primitive data types of value type (Call by value)
+   ![alt text](./images/class_blueprint.png)
