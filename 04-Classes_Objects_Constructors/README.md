@@ -226,3 +226,65 @@ public class Dog {
 
 1. An overridden method is not the same thing as an overloaded method.
 2. An overridden method is a special method in Java that other classes can implement if they use a specified method signature.
+
+# The Record (Java's Implicit POJO Type)
+
+1. Plain Old Java Object (POJO) comes with a lot of boilerplate code.
+2. It's the code that's repetitive and follows certain rules.
+3. Once created, this code is rarely looked at, or modified.
+4. In fact, there are tools that'll just regenerate all of this code if your underlying data or domain model changes.
+
+### The Record Type
+
+1. The record was introduced in JDK 14 and became officially part of Java in JDK 16.
+2. It's purpose is to replace the boilerplate code of the POJO but to be more restrictive.
+3. Java calls them "plain data carriers".
+4. The record is a special class that contains data that's not meant to be altered.
+5. In other words, it seeks to achieve immutability for the data in its members.
+6. It contains only the most fundamental methods, such as constructors and accessors.
+7. Best of all, you, the developer, don't have to write or generate any of this code.
+
+### Implicit or Generated Code that Java provides
+
+What does Java tell us about what is implicitly created when we declare a record as it is done in this code?
+
+```
+public record Student(String id, String name, String dateOfBirth, String classList) {
+
+}
+```
+
+First, it's important to understand that the part that's in parentheses, is called the record header.
+The record header consists of record components, a comma-delimited list of components.
+
+(The above code replaces all pojo code, we write with getters and setters)
+
+**How to access above record type class?**
+
+```
+Student recordStudent = new Student("student_id", "Akash", "30-10-1998", "Java, springboot, devops");
+<!-- We can print recordStudent, as record in built has toString method -->
+System.out.println(recordStudent);
+
+<!-- If want to access any of the field, like id we can do the following -->
+String name = recordStudent.name();
+String id = recordStudent.id();
+String dob = recordStudent.dateOfBirth();
+String classList = recordStudent.classList();
+```
+
+### Why have an immutable record?
+
+There are more use cases for immutable data transfer objects and keeping them well encapsulated. You want to protect the data from unintended mutations.
+
+### POJO vs. Record
+
+1. If you want to modify data on your class, you won't be using the record.
+2. You can use the code generation options for the POJO.
+3. But if you're reading a whole lot of records from a database or file source and simply passing this data around, then the record is a big improvement.
+
+### Java's new type, the record
+
+1. I've only touched on some of the features of the record to give you an introduction.
+2. When I do talk more about the final keyword and immutability of data, especially as it may be affected by concurrent threads, we'll be revisiting this type.
+3. I'll also be showing it to you in action, when we get to the Database and I/O sections of this course.
