@@ -113,3 +113,16 @@ public class Person {
 1. Objects are reference type (Call by reference)
 2. Primitive data types of value type (Call by value)
    ![alt text](./images/Object-class-instance.png)
+
+Lets say there is a class named Person.
+Following line executes fine
+
+```
+public class Main {
+    public static void main() {
+        new Person();  // --> executes fine
+    }
+}
+```
+
+Bute because we have not assigned it any variable, there is no way to access any attribute or method of that object
