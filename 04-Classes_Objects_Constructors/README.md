@@ -112,4 +112,4 @@ public class Person {
 
 1. Objects are reference type (Call by reference)
 2. Primitive data types of value type (Call by value)
-   ![alt text](./images/class_blueprint.png)
+   ![alt text](./images/Object-class-instance.png)
