@@ -166,3 +166,28 @@ public class Dog {
 4. Each instance has its own copy of an instance variable.
 5. Every instance can have a different value.
 6. Instance variables represent the state of a specific instance of a class.
+
+# Static vs Instance Methods
+
+### Static methods
+
+1. Static methods are declared using a static modifier.
+2. Static methods can't access instance methods and instant variables directly.
+3. They're usually used for operations that don't require any data from an instance of the class (from 'this').
+4. If you remember, the **this** keyword is the current instance of a class.
+5. Inside a static method, we can't use the **this** keyword.
+6. Whenever you see a method that doesn't use instance variables, that method should probably be declared as a static method.
+7. For example, main is a static method and it's called by the Java virtual machine when it starts the Java application.
+
+### Instance methods
+
+1. Instance methods belong to an instance of a class.
+2. To use an instance method, we have to instantiate the class first, usually by using the new keyword.
+3. Instance methods belong to an instance of a class.
+4. To use an instance method, we have to instantiate the class first, usually by using the new keyword.
+5. Instance methods can access instance methods and instance variables directly.
+6. Instance methods can also access static methods and static variables directly.
+
+### Static or Instance method
+
+![alt text](./images/Static_or_Instance.png)
