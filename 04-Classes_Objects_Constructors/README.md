@@ -191,3 +191,38 @@ public class Dog {
 ### Static or Instance method
 
 ![alt text](./images/Static_or_Instance.png)
+
+# The POJO
+
+### Plain Old Java Object
+
+1. A plain old Java object (whose acronym is POJO) is a class that generally only has instance fields.
+2. It's used to house data and pass data between functional classes.
+3. It usually has no other, or very few methods, other than getters and setters for the instance fields.
+4. Many database frameworks use POJO's to read data from, or to write data to databases, files or streams.
+
+### Examples of POJOs
+
+5. A POJO also might be called a bean or a JavaBean.
+6. A JavaBean is just a POJO with some extra rules applied to it.
+7. A POJO is sometimes called an Entity because it mirrors database entities.
+8. Another acronym is DTO for Data Transfer Object.
+9. It's a description of an object that can be modeled as just data.
+
+### Support for POJOs
+
+1. There are many generation tools that will turn a data model into generated POJO's or JavaBeans.
+2. You've seen an example of similar code generation in IntelliJ, which allowed me to generate getters, setters, and constructors in a uniform way.
+
+### Annotation
+
+1. Annotations are a type of metadata.
+2. Metadata is a way to formally describe additional information about our code.
+3. Annotations are more structured and have more meaning than comments.
+4. This is because they can be used by the compiler or other types of pre-processing functions, to get information about the code.
+5. Metadata doesn't affect how the code runs so this code will still run with or without the annotation.
+
+### Overridden Method
+
+1. An overridden method is not the same thing as an overloaded method.
+2. An overridden method is a special method in Java that other classes can implement if they use a specified method signature.
