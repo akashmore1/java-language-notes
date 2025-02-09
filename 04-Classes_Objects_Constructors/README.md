@@ -129,13 +129,6 @@ Bute because we have not assigned it any variable, there is no way to access any
 
 # Static vs Instance Variables
 
-### Static variables
-
-1. Declared by using the keyword static.
-2. Static variables are also known as static member variables.
-3. Every instance of the class shares the same static variable.
-4. If changes are made to that variable, all other instances of that class will see the effect of that change.
-
 It is considered best practice to use the Class name and not a reference variable to access a static variable.
 
 ```
@@ -152,16 +145,20 @@ public class Dog {
 }
 ```
 
-\***\*Static variables\*\***
+### Static variables
 
-1. Static variables aren't used very often but can sometimes be very useful.
-2. They can be used for:
+1. Declared by using the keyword static.
+2. Static variables are also known as static member variables.
+3. Every instance of the class shares the same static variable.
+4. If changes are made to that variable, all other instances of that class will see the effect of that change.
+5. Static variables aren't used very often but can sometimes be very useful.
+6. They can be used for:
    a. Storing counters.
    b. Generating unique IDs.
    c. Storing a constant value that doesn't change, like PI, for example.
    d. Creating and controlling access to a shared resource.
 
-\***\*Instance variables\*\***
+### Instance variables
 
 1. They don't use the static keyword.
 2. They're also known as fields or member variables.
