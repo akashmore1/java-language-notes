@@ -100,3 +100,77 @@ The overridden method can do one of three things:
 ### super() call example
 
 ![alt text](./image/Supercall.png)
+
+# Method Overriding vs Overloading
+
+### Method Overloading
+
+1. Method overloading means providing two or more separate methods in a class with the same name but different parameters.
+2. Method return type may or may not be different, and that allows us to reuse the same method name.
+3. Overloading is very handy, it reduces duplicated code, and we don't have to remember multiple method names.
+4. We can overload static or instance methods.
+5. To the code calling an overloaded method, it looks like a single method can be called with different sets of arguments.
+6. In actuality, each call that's made with a different set of arguments is calling a separate method.
+7. Java developers often refer to method overloading, as compile-time polymorphism.
+8. This means the compiler is determining the right method to call, based on the method name and argument list.
+9. Usually overloading happens within a single class.
+10. But methods can also be overloaded by subclasses.
+11. That's because a subclass inherits one version of the method from the parent class, and then the subclass can have another overloaded version of that method.
+
+### Method Overloading Rules
+
+1. Methods will be considered overloaded if both methods follow the following rules:
+   a. Methods must have the same method name.
+   b. Methods must have different parameters.
+2. If methods follow the rules above:
+   a. They may or may not have different return types.
+   b. They may or may not have different access modifiers.
+   c. They may or may not throw different checked or unchecked exceptions.
+
+### Method Overriding
+
+1. Method overriding, means defining a method in a child class that already exists in the parent class, with the same signature (the same name, same parameters).
+2. By extending the parent class, the child class gets all the methods defined in the parent class. Those methods are also known as derived methods.
+3. Method overriding is also known as Runtime Polymorphism or Dynamic Method Dispatch because the method that is going to be called is decided at runtime by the Java virtual machine.
+4. When we override a method, it's recommended to put @Override immediately above the method definition.
+5. The @Override statement is not required, but it's a way to get the compiler to flag an error if you don't actually properly override this method.
+6. We'll get an error if we don't follow the overriding rules correctly.
+7. We can't override static methods, only instance methods can be overridden.
+
+### Method Overriding Rules
+
+A method will be considered overridden if we follow these rules.
+
+1. It must have the same name and same arguments.
+2. The return type can be a subclass of the return type in the parent class.
+3. It can't have a lower access modifier. In other words, it can't have more restrictive access privileges.
+4. For example, if the parent's method is protected, then using private in the child's overridden method is not allowed. However, using public for the child's method would be allowed, in this example.
+5. Only inherited methods can be overridden, in other words, methods can be overridden only in child classes.
+6. Constructors and private methods cannot be overridden.
+7. Methods that are final cannot be overridden.
+8. A subclass can use super.methodName() to call the superclass version of an overridden method.
+
+### Overloading vs overloading
+
+![alt text](./image/OverloadingvsOverloading.png)
+
+#### Overloading vs overloading differences
+
+![alt text](./image/image.png)
+
+### Covariant Return Type
+
+1. The return type of an overridden method can be the same type as the parent method's declaration.
+2. But it can also be a subclass.
+3. The term, covariant return type, is more appropriate.
+4. I briefly mentioned in a previous video that there's a clone method on the class Object that all classes inherit from.
+5. A simplified look at this declaration, for our purposes, is shown below.
+
+And if you overrode this method by using IntelliJ's code generation tools, it would generate this code in your class:
+
+![alt text](./image/image-1.png)
+
+6. But in general, when you're cloning an instance, you're going to want to return an Object that's the same type as the Object you are cloning.
+7. Remember, I said all classes ultimately have Object as a base class, so every class can be said to be a covariant of Object.
+
+![alt text](image1.png)
