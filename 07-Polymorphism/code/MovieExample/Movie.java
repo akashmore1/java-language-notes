@@ -46,22 +46,7 @@ public class Movie {
                 }
             }
             while (inValidMovie);
-
-            switch(movieType) {
-                case "1" -> {
-                    movie = new ScienceFiction(movieTitle);
-                }
-                case "2" -> {
-                    movie = new Comedy(movieTitle);
-                }
-                case "3" -> {
-                    movie = new Adventure(movieTitle);
-                }
-                default -> {
-                    movie = new Movie(movieTitle);
-                }
-            }
-
+            movie = new Movie(movieTitle).getMovie(movieType.equals("1") ? "s" : movieType.equals("2") ? "c" : movieType.equals("3") ? "a" : "m");
             movie.describeMovie();
 
             System.out.println("Do you want to continue watching movie? Select (y/n)");
