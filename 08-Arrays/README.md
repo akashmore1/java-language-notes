@@ -42,3 +42,38 @@
 4. You can't add or delete elements. You can only assign values to one of the ten elements in this array, in this example.
 5. Note that Java has other capabilities to store elements that can be resized. We'll be looking at those in the next section.
 6. For now its important to understand these basic arrays.
+
+### General way to declare and initialize an array
+
+```
+public class LearnArray {
+    public static void initiateArray () {
+        int[] first10Number = new int[10];
+
+        first10Number[0] = 1;
+        first10Number[1] = 2;
+        first10Number[2] = 3;
+        first10Number[3] = 4;
+        first10Number[4] = 5;
+        first10Number[5] = 6;
+        first10Number[6] = 7;
+        first10Number[7] = 8;
+        first10Number[8] = 9;
+        first10Number[9] = 10;
+
+        System.out.println(Arrays.toString(first10Number));
+    }
+}
+```
+
+# The Array Initializer
+
+1. An array initializer makes the job of instantiating and initializing an array much easier.
+   | The Array Initializer |
+   | --------------------- |
+   | int[] numbers = new int[]{1, 2, 3, 4, 5}; |
+
+2. In this example, you can see I still use the new keyword and have int with the square brackets.
+3. But here, I specify the values I want the array to be initialized to, in a comma-delimited list, within curly braces.
+4. Because these values are specified, the length of the array can be determined by Java, so I don't then need to specify the size of the array in square brackets.
+5. And actually, Java provides an even simpler way to do this.
