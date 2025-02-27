@@ -90,3 +90,15 @@ Here, I'm showing examples for both an int array as well as a String array.
 | String[] names = {"Akash", "Monty", "Nitin"};  |
 
 An anonymous array initializer can only be used in a declaration statement.
+
+i.e. **Below code is not allowed**
+
+```
+public class LearnArray {
+    public static void initiateArray () {
+        int[] first6Number;
+        first6Number = {1, 2, 3, 4, 5, 6} // throws error
+        System.out.println(Arrays.toString(first10Number));
+    }
+}
+```
