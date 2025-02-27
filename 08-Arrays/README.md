@@ -13,25 +13,32 @@
 
 # Declaring an Array
 
-| Array Variable Declaration |
-| -------------------------- |
-| `int[] integerArray`       |
-| `String[] nameList`        |
-| `String courseList[]`      |
-
 1. When you declare an array, you first specify the type of the elements you want in the array.
 2. Then you include square brackets in the declaration, which is the key for Java to identify the variable as an array.
 3. The square brackets can follow the type as shown in the first two examples.
 4. You can also put the square brackets after the variable name as shown in the last example.
 5. The first approach is much more common.
 6. Note that you don't specify a size in the array declaration itself.
+   | Array Variable Declaration |
+   | -------------------------- |
+   | `int[] integerArray` |
+   | `String[] nameList` |
+   | `String courseList[]` |
 
 # Instantiating an Array
-
-| Array Creation                    | Object creation                         |
-| --------------------------------- | --------------------------------------- |
-| int[] integerArray = new int[10]; | StringBuilder sb = new StringBuilder(); |
 
 1. They look pretty similar, but there are two major differences when creating arrays.
 2. Square brackets are required when using the new keyword and a size is specified between them. So, in this example, there will be 10 elements in the array.
 3. An array instantiation doesn't have a set of parentheses, meaning we can't pass data to a constructor for an array.
+   | Array Creation | Object creation |
+   | --------------------------------- | --------------------------------------- |
+   | int[] integerArray = new int[10]; | StringBuilder sb = new StringBuilder(); |
+
+## An Array is not resizable
+
+1. The size of an array, once created, is fixed.
+2. In this case, integerArray will have 10 elements.
+3. You can't change the size of an array after the array is instantiated.
+4. You can't add or delete elements. You can only assign values to one of the ten elements in this array, in this example.
+5. Note that Java has other capabilities to store elements that can be resized. We'll be looking at those in the next section.
+6. For now its important to understand these basic arrays.
