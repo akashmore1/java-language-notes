@@ -28,9 +28,9 @@
 
 # Instantiating an Array
 
-    | Array Creation                    | Object creation                         |
-    | --------------------------------- | --------------------------------------- |
-    | int[] integerArray = new int[10]; | StringBuilder sb = new StringBuilder(); |
+| Array Creation                    | Object creation                         |
+| --------------------------------- | --------------------------------------- |
+| int[] integerArray = new int[10]; | StringBuilder sb = new StringBuilder(); |
 
 1. They look pretty similar, but there are two major differences when creating arrays.
 2. Square brackets are required when using the new keyword and a size is specified between them. So, in this example, there will be 10 elements in the array.
