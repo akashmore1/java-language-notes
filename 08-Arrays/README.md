@@ -77,3 +77,14 @@ public class LearnArray {
 3. But here, I specify the values I want the array to be initialized to, in a comma-delimited list, within curly braces.
 4. Because these values are specified, the length of the array can be determined by Java, so I don't then need to specify the size of the array in square brackets.
 5. And actually, Java provides an even simpler way to do this.
+
+# The array initializer as an anonymous array
+
+Java allows us to drop the new int[] with brackets from the expression, as I'm showing here.
+This is known as an anonymous array.
+Here, I'm showing examples for both an int array as well as a String array.
+| The Array Initializer |
+| --------------------- |
+| int[] firstFourPositiveNumbers = {1, 2, 3, 4}; |
+| String[] names = {"Akash", "Monty", "Nitin"}; |
+An anonymous array initializer can only be used in a declaration statement.

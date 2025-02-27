@@ -4,6 +4,7 @@
 *.class
 *.DS_Store
 *.iml
+*.vscode
 
 # Log file
 *.log
