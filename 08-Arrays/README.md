@@ -25,3 +25,13 @@
 4. You can also put the square brackets after the variable name as shown in the last example.
 5. The first approach is much more common.
 6. Note that you don't specify a size in the array declaration itself.
+
+# Instantiating an Array
+
+    | Array Creation                    | Object creation                         |
+    | --------------------------------- | --------------------------------------- |
+    | int[] integerArray = new int[10]; | StringBuilder sb = new StringBuilder(); |
+
+1. They look pretty similar, but there are two major differences when creating arrays.
+2. Square brackets are required when using the new keyword and a size is specified between them. So, in this example, there will be 10 elements in the array.
+3. An array instantiation doesn't have a set of parentheses, meaning we can't pass data to a constructor for an array.
