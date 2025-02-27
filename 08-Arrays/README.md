@@ -83,8 +83,10 @@ public class LearnArray {
 Java allows us to drop the new int[] with brackets from the expression, as I'm showing here.
 This is known as an anonymous array.
 Here, I'm showing examples for both an int array as well as a String array.
-| The Array Initializer |
-| --------------------- |
+
+| The Array Initializer                          |
+| ---------------------------------------------- |
 | int[] firstFourPositiveNumbers = {1, 2, 3, 4}; |
-| String[] names = {"Akash", "Monty", "Nitin"}; |
+| String[] names = {"Akash", "Monty", "Nitin"};  |
+
 An anonymous array initializer can only be used in a declaration statement.
