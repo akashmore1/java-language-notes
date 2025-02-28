@@ -97,7 +97,8 @@ i.e. **Below code is not allowed**
 public class LearnArray {
     public static void initiateArray () {
         int[] first6Number;
-        first6Number = {1, 2, 3, 4, 5, 6} // throws error
+        // first6Number = {1, 2, 3, 4, 5, 6}; // throws error
+        first6Bumber = new int [] {1, 2, 3, 4, 5, 6}; // Works
         System.out.println(Arrays.toString(first10Number));
     }
 }
