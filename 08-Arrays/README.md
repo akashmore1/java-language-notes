@@ -137,5 +137,7 @@ public class ArraysDefaultValues {
 # Enhanced **For loop** or **For Each Loop**
 
 This loop was designed to walk through elements in an array or other collection types.
+
 It processes one element at a time, from the first element to the last.
+
 Here is the syntax for the two types of for loop statements, side by side.
