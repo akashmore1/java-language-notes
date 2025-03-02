@@ -142,10 +142,8 @@ It processes one element at a time, from the first element to the last.
 
 Here is the syntax for the two types of for loop statements, side by side.
 
-| Enhanced For Loop              | Basic For Loop                      |
-| ------------------------------ | ----------------------------------- |
-| for(declaration: collection) { | for(init; expression; increment;) { |
-| // block of statements         | // block of statements              |
-| }                              | }                                   |
+| Enhanced For Loop                                      | Basic For Loop                                              |
+| ------------------------------------------------------ | ----------------------------------------------------------- |
+| for(declaration: collection) {// block of statements } | for(init; expression; increment;) {// block of statements } |
 
 The enhanced for loop only has two components, versus three defined in the parentheses after the for keyword.
