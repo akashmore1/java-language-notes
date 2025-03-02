@@ -103,3 +103,33 @@ public class LearnArray {
     }
 }
 ```
+
+# What exactly is an Array?
+
+1. An array is a special class in Java.
+2. It's still a class.
+3. The array, like all other classes, ultimately inherits from java.lang.Object.
+
+## Array initialization and default element values
+
+When you don't use an array initializer statement, all array elements get initialized to the default value for that type.
+For primitive types, this is zero for any kind of numeric primitive, like int, double, or short.
+For booleans, the default value will be false.
+And for any class type, the elements will be initialized to null.
+
+For example
+
+```
+public class ArraysDefaultValues {
+    public static void learnDefaultValuesInArray() {
+        int[] first10Numbers = new int[10];
+        System.out.println(Arrays.toString(first10Numbers));  // output: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+        String[] names = new String[]{};
+        System.out.println(Arrays.toString(names)); // output: []
+
+        String[] months = new String[12];
+        System.out.println(Arrays.toString(months)); // output: [null, null, null, null, null, null, null, null, null, null, null, null]
+    }
+}
+```
