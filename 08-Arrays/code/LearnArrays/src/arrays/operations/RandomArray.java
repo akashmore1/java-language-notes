@@ -11,4 +11,9 @@ public class RandomArray {
         }
         return randomArr;
     }
+
+    public static int[] getSortedArray(int[] randomArray) {
+        Arrays.sort(randomArray);
+        return randomArray;
+    }
 }
