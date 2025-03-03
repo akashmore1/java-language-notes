@@ -98,7 +98,7 @@ public class LearnArray {
     public static void initiateArray () {
         int[] first6Number;
         // first6Number = {1, 2, 3, 4, 5, 6}; // throws error
-        first6Bumber = new int [] {1, 2, 3, 4, 5, 6}; // Works
+        first6Number = new int [] {1, 2, 3, 4, 5, 6}; // Works
         System.out.println(Arrays.toString(first10Number));
     }
 }
@@ -147,3 +147,41 @@ Here is the syntax for the two types of for loop statements, side by side.
 | for(declaration: collection) {// block of statements } | for(init; expression; increment;) {// block of statements } |
 
 The enhanced for loop only has two components, versus three defined in the parentheses after the for keyword.
+
+```
+public class EnhancedForLoop {
+    public static void learnForEach() {
+        int[] first10Nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        for(int i = 0; i < first10Nums.length; i++) {
+            System.out.print(first10Nums[i] + " ");
+        }
+        System.out.println("");
+        // Enhanced For loop:
+        for(int num: first10Nums) {
+            System.out.print(num + " ");
+        }
+
+    }
+}
+```
+
+# java.util.Arrays
+
+Java's array type is very basic, it comes with very little built-in functionality.
+
+It has a single property or field, named length.
+
+And it inherits java.util.Object's functionality.
+
+Java provides a helper class named java.util.Arrays, providing the common functionality you'd want for many array operations.
+
+These are static methods on Arrays, they are class methods, not instance methods.
+
+## Printing elements in an array using Arrays.toString()
+
+The toString method in this helper class prints out all the array elements, comma delimited, and contained in square brackets.
+
+The output from this method is shown here conceptually.
+
+It prints the element at index 0 first, followed by a comma, then the element at index 1 next, a comma, and so on, until all elements are printed.
