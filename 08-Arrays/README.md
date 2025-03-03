@@ -185,3 +185,9 @@ The toString method in this helper class prints out all the array elements, comm
 The output from this method is shown here conceptually.
 
 It prints the element at index 0 first, followed by a comma, then the element at index 1 next, a comma, and so on, until all elements are printed.
+
+## Why use arrays?
+
+1. We use arrays to manage many items of the same type.
+2. Some common behaviors for arrays include sorting, initializing values, copying the array, and finding an element.
+3. This behavior isn't on the array instance itself, but rather provided on a helper class, java.util.Arrays.
