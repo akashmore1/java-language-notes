@@ -318,3 +318,18 @@ public class BinarySearch {
     }
 }
 ```
+
+# Arrays.equals(arr1, arr2)
+
+Arrays.equals method return true if following both conditions are matched
+
+1. Length of both arrays is same
+2. All position elements of both arrays are same
+
+Else it returns false
+
+```
+public static boolean areArraysEqual(int[] arr1, int[] arr2) {
+    return Arrays.equals(arr1, arr2);
+}
+```
