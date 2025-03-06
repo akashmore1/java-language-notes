@@ -230,3 +230,44 @@ public class ArrayOperations {
     }
 }
 ```
+
+# Search on arrays
+
+### Sequential search
+
+You can probably imagine that if you were going to start writing code to do this, you might start looping from the first to the last element of an array, checking each element to see if it matches a value that you're looking for.
+
+If you find a match, you'd stop looping and return that a match was found, either with the position you found the element at or just a boolean value: true if it was found, and false if not.
+
+This is called a linear or sequential search because you're stepping through the elements one after another.
+
+If your elements are sorted, using this type of linear search is unnecessarily inefficient.
+
+### Binary Search
+
+You split each section up, testing the values at the boundaries, and based on that, split again into smaller sections, narrowing the number of elements to test each time.
+
+This type of searching in software is called interval searching.
+
+Within these two categories, sequential and interval, there are numerous existing algorithms.
+
+One of the most common interval searches is the binary search, which is why Java provides this search on so many of its collection section.
+
+In this search, intervals are continually split into two, hence the word binary.
+
+## Arrays.binarySearch
+
+The static method, binarySearch, is in the Arrays class.
+
+We can use this method to test if a value is already in our array, but there are some important things to remember.
+
+1. First, the array has to be sorted.
+2. Second, if there are duplicate values in the array, there's no guarantee which one it'll match on.
+3. Finally, elements must be comparable. Trying to compare instances of different types will lead to errors and invalid results.
+
+This method returns:
+The position of a match, if found.
+
+1. It returns a -1 when no match was found.
+2. It's important to remember that a positive number may not be the position of the first match.
+3. If your array has duplicate values and you need to find the first element, other methods should be used.
